@@ -1,0 +1,5 @@
+COMMANDS FOR THE NPM WITH PROPER PACKAGE INSTALLER
+1. npm init    "Project initilization"
+2. npm insatll nodemon --save-dev  "For autoupdate no need to kill the server for again running"
+3. npm install nodemon --save-dev -g "For installing latest depen  Eg 3.1.0 => 3.1.10"
+4. npm install "Recreate the full nodemon_module"

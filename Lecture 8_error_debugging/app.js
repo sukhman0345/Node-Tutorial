@@ -1,9 +1,11 @@
 const http = require("http");
 const errorDubugging = require("./errors_and_debugging");
+const practiceSet = require("./practice_set");
 
 const server = http.createServer((req, res) => {
   console.log(req.url, req.method);
-  errorDubugging();
+  // errorDubugging();
+  practiceSet();
 });
 
 const PORT = 3000;

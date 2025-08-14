@@ -1,9 +1,9 @@
 const http = require("http");
-const testingSyntax = require("./syntax");
+const errorDubugging = require("./errors_and_debugging");
 
 const server = http.createServer((req, res) => {
   console.log(req.url, req.method);
-  testingSyntax();
+  errorDubugging();
 });
 
 const PORT = 3000;

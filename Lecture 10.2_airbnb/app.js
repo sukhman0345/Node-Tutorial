@@ -18,6 +18,11 @@ app.use(express.urlencoded()); // Inbuild middleware work as the stream, chunk, 
 app.use(userRouter);
 app.use(hostRouter);
 
+// for 404 status
+app.use((req, res, next)=>{
+  res.status(404).send(`<h1>PAGE NOT FOUND</h1>`)
+})
+
 const PORT = 3000;
 app.listen(PORT, ()=> {
   console.log(`App running at http://localhost:${PORT}`);
